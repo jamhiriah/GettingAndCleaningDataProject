@@ -4,18 +4,18 @@ library(data.table)
 library(dplyr)
 
 ##Read Supporting Metadata
-
-featureNames <- read.table("/Users/Jam/Desktop/Coursera/03/UCI HAR Dataset/features.txt")
-activityLabels <- read.table("/Users/Jam/Desktop/Coursera/03/UCI HAR Dataset/activity_labels.txt", header = FALSE)
+##Take note my 
+featureNames <- read.table("./UCI HAR Dataset/features.txt")
+activityLabels <- read.table("./UCI HAR Dataset/activity_labels.txt", header = FALSE)
 
 ##Read training data
-subjectTrain <- read.table("/Users/Jam/Desktop/Coursera/03/UCI HAR Dataset/train/subject_train.txt", header = FALSE)
-activityTrain <- read.table("/Users/Jam/Desktop/Coursera/03/UCI HAR Dataset/train/y_train.txt", header = FALSE)
-featuresTrain <- read.table("/Users/Jam/Desktop/Coursera/03/UCI HAR Dataset/train/X_train.txt", header = FALSE)
+subjectTrain <- read.table("./UCI HAR Dataset/train/subject_train.txt", header = FALSE)
+activityTrain <- read.table("./UCI HAR Dataset/train/y_train.txt", header = FALSE)
+featuresTrain <- read.table("./UCI HAR Dataset/train/X_train.txt", header = FALSE)
 ##Read test data
-subjectTest <- read.table("/Users/Jam/Desktop/Coursera/03/UCI HAR Dataset/test/subject_test.txt", header = FALSE)
-activityTest <- read.table("/Users/Jam/Desktop/Coursera/03/UCI HAR Dataset/test/y_test.txt", header = FALSE)
-featuresTest <- read.table("/Users/Jam/Desktop/Coursera/03/UCI HAR Dataset/test/X_test.txt", header = FALSE)
+subjectTest <- read.table("./UCI HAR Dataset/test/subject_test.txt", header = FALSE)
+activityTest <- read.table("./UCI HAR Dataset/test/y_test.txt", header = FALSE)
+featuresTest <- read.table("./UCI HAR Dataset/test/X_test.txt", header = FALSE)
 
 ##Part 1 - Merge the training and the test sets to create one data set
 ##Combine the data in training and test data sets into subject, activity and features.

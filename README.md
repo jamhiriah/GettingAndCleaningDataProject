@@ -25,5 +25,4 @@ In this project, you find:
 - *README.md* : the analysis of the code in *run_analysis.R*
 
 ##Basic Assumption
-The R code in *run_analysis.R* proceeds under the assumption that the zip file available at <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip> is downloaded and extracted in the dedicated directory named;
-"/Users/Jam/Desktop/Coursera/03/UCI HAR Dataset/
+The R code in *run_analysis.R* proceeds under the assumption that the zip file available at <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip> is downloaded and extracted in the working directory
